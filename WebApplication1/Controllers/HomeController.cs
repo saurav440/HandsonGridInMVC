@@ -32,6 +32,11 @@ namespace WebApplication1.Controllers
             return View(clients);
         }
 
+        [HttpPost]
+        public JsonResult SaveAll(string request)
+        {
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
 
     }
 }
